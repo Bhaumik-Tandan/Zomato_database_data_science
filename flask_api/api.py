@@ -12,7 +12,7 @@ cuisines=load_cuisines()
 def api():
     model=load_models(already_loaded,request.json['model'])
     rating= predict_rating(model,request.json,cuisines)
-    return {'rating':str(rating[0])}
+    return str(rating[0])
 
 
 app.run(debug=True)
