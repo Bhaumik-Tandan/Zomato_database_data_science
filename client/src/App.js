@@ -3,9 +3,16 @@ import Form from './form/form';
 function App() {
 
   return (
-    <div>
-      <Form/>
-    </div>
+      <center>
+        <h1>Rating Predictor</h1>
+        <h3>Server is located
+          <span> </span>
+          <a href="https://github.com/Bhaumik-Tandan/Zomato_database_data_science/tree/main/flask_api">Here</a>
+          <span> </span>
+          <span role="img" aria-label="server">🚀</span>
+        </h3>
+        <Form/>
+      </center>
   );
 }
 

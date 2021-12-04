@@ -14,3 +14,21 @@ content-type:application/json
     "votes": 300,
     "cuisines": ["French", "Japanese", "Desserts", "Seafood"]
 }
+
+###
+fetch("http://localhost:5000 ", {
+         method: "POST",
+         body:JSON.stringify({
+    "model":"random_forest",
+    "longitude": 23,
+    "latitude": 43,
+    "average_cost_for_two": 200,
+    "has_table_booking": 1,
+    "has_online_delivery": 0,
+    "is_delivering_now": 1,
+    "switch_to_order_menu": 1,
+    "price_range": 1,
+    "votes": 300,
+    "cuisines": ["French", "Japanese", "Desserts", "Seafood"]
+})
+        });
