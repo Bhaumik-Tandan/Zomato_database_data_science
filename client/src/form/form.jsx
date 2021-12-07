@@ -36,7 +36,8 @@ function Form() {
             payload['cuisines'].push(selectedCuisines[i]['name']);
 
         const res=await restCon(payload);     
-        console.log(res);
+        const body=await res.json();
+        console.log(body);
 
 
     }
