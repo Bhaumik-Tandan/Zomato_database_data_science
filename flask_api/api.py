@@ -14,9 +14,7 @@ cuisines=load_cuisines()
 def api():
     model=load_models(already_loaded,request.json['model'])
     rating= predict_rating(model,request.json,cuisines)
-    # print(request.json)
     response= jsonify({"rating":str(rating[0])})
-    # response= jsonify({"rating":str(0.5)})
     return response
 
 

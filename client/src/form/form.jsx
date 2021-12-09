@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import "./form.css";
 import Multiselect from 'multiselect-react-dropdown';
 import {restCon} from "./restCon";
-
+import Loading from './loading/loading';
+import Rating from './rating/rating';
 const cuisines=require('./cuisines.json')['list'];
 function Form() {
 
@@ -12,10 +13,12 @@ function Form() {
     const [hasOnlineDelivery,setHasOnlineDelivery]=useState("1");
     const [isDeliveringNow,setIsDeliveringNow]=useState("1");
     const [switchToOrderMenu,setSwitchToOrderMenu]=useState("1");
-
+    const [status,setStatus]=useState(1);//0 for loading,1 for form,2 for result
+    const [rating,setRating]=useState(0);
 
     async function submit(event)
     {
+        setStatus(0);
         event.preventDefault();
 
         const payload={
@@ -38,11 +41,13 @@ function Form() {
         const res=await restCon(payload);     
         const body=await res.json();
         console.log(body);
-
-
+        setRating(body['rating']);
+        setStatus(2);
     }
 
     return (
+        <>
+        {status===0?<Loading text="Getting Rating" />:status===1?
         <form className="form"  onSubmit={submit} >
 
             <label>Model</label>
@@ -106,7 +111,13 @@ function Form() {
             
             <input type="submit" value="Submit" />
 
-        </form>
+        </form>:
+        <div className="result">
+            <button onClick={()=>setStatus(1)}>Go Back</button>
+            <Rating rating={rating} />
+        </div>
+        }
+        </>
     )
 }
 
