@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Zomato_database_data_science/static/css/main.e4b755a9.chunk.css",
+    "main.js": "/Zomato_database_data_science/static/js/main.3249a4a6.chunk.js",
+    "main.js.map": "/Zomato_database_data_science/static/js/main.3249a4a6.chunk.js.map",
+    "runtime-main.js": "/Zomato_database_data_science/static/js/runtime-main.5511c91a.js",
+    "runtime-main.js.map": "/Zomato_database_data_science/static/js/runtime-main.5511c91a.js.map",
+    "static/js/2.62949bc0.chunk.js": "/Zomato_database_data_science/static/js/2.62949bc0.chunk.js",
+    "static/js/2.62949bc0.chunk.js.map": "/Zomato_database_data_science/static/js/2.62949bc0.chunk.js.map",
+    "index.html": "/Zomato_database_data_science/index.html",
+    "static/css/main.e4b755a9.chunk.css.map": "/Zomato_database_data_science/static/css/main.e4b755a9.chunk.css.map",
+    "static/js/2.62949bc0.chunk.js.LICENSE.txt": "/Zomato_database_data_science/static/js/2.62949bc0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5511c91a.js",
+    "static/js/2.62949bc0.chunk.js",
+    "static/css/main.e4b755a9.chunk.css",
+    "static/js/main.3249a4a6.chunk.js"
+  ]
+}
