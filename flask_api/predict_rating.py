@@ -13,6 +13,10 @@ def predict_rating(modal,data,cuisines):
     fields_dict['price_range'] = data.get('price_range')
     fields_dict['votes'] = data.get('votes')
 
+    for k,v in fields_dict.items():
+        if v is None:
+            fields_dict[k] = 0
+
     cuisines_dict=OrderedDict(zip(cuisines,len(cuisines)*[0]))
     for i in data["cuisines"]:
         cuisines_dict[i]=1
