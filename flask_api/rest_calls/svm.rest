@@ -1,0 +1,16 @@
+POST http://127.0.0.1:5000
+content-type:application/json
+
+{
+    "model":"svm",
+    "longitude": 23,
+    "latitude": 43,
+    "average_cost_for_two": 200,
+    "has_table_booking": 1,
+    "has_online_delivery": 0,
+    "is_delivering_now": 0,
+    "switch_to_order_menu": 0,
+    "price_range": 1,
+    "votes": 300,
+    "cuisines": ["French", "Japanese","German","Thai"]
+}
