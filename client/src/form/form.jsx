@@ -9,7 +9,7 @@ function Form() {
     const [selectedCuisines,setSelectedCuisines]=useState([]);
     const [model,setModel]=useState("random_forest");
     const [hasTableBooking,setHasTableBooking]=useState("1");
-    const [hasOnlineBooking,setHasOnlineBooking]=useState("1");
+    const [hasOnlineDelivery,setHasOnlineDelivery]=useState("1");
     const [isDeliveringNow,setIsDeliveringNow]=useState("1");
     const [switchToOrderMenu,setSwitchToOrderMenu]=useState("1");
 
@@ -22,12 +22,12 @@ function Form() {
             "cuisines":[],
             "model":model,
             "has_table_booking":parseInt(hasTableBooking),
-            "has_online_booking":parseInt(hasOnlineBooking),
+            "has_online_delivery":parseInt(hasOnlineDelivery),
             "is_delivering_now":parseInt(isDeliveringNow),
             "switch_to_order_menu":parseInt(switchToOrderMenu),
             "longitude":parseFloat(event['target']['elements']["longitude"]['value']),
             "latitude":parseFloat(event['target']['elements']["latitude"]['value']),
-            "average_cost_for_two":event.target.elements[3].value,
+            "average_cost_for_two":parseInt(event.target.elements[3].value),
             "price_range":parseInt(event.target.elements[8].value),
             "votes":parseInt(event['target']['elements']["votes"]['value'])
         }
@@ -71,7 +71,7 @@ function Form() {
             </select>
 
             <label>Has Online Delivery</label>
-            <select name="hasOnlineDelivery" onChange={(e)=>{setHasOnlineBooking(e.value)}} >
+            <select name="hasOnlineDelivery" onChange={(e)=>{setHasOnlineDelivery(e.value)}} >
             <option value="1">Yes</option>
             <option value="0">No</option>
             </select>
