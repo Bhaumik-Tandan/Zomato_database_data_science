@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Zomato_database_data_science/static/css/main.e4b755a9.chunk.css",
-    "main.js": "/Zomato_database_data_science/static/js/main.e1830001.chunk.js",
-    "main.js.map": "/Zomato_database_data_science/static/js/main.e1830001.chunk.js.map",
+    "main.js": "/Zomato_database_data_science/static/js/main.db3035ac.chunk.js",
+    "main.js.map": "/Zomato_database_data_science/static/js/main.db3035ac.chunk.js.map",
     "runtime-main.js": "/Zomato_database_data_science/static/js/runtime-main.5511c91a.js",
     "runtime-main.js.map": "/Zomato_database_data_science/static/js/runtime-main.5511c91a.js.map",
     "static/js/2.62949bc0.chunk.js": "/Zomato_database_data_science/static/js/2.62949bc0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.5511c91a.js",
     "static/js/2.62949bc0.chunk.js",
     "static/css/main.e4b755a9.chunk.css",
-    "static/js/main.e1830001.chunk.js"
+    "static/js/main.db3035ac.chunk.js"
   ]
 }
